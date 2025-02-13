@@ -111,7 +111,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias fd="open ."
 alias school="cd ~/Documents/School/Fall\ 2024/"
-alias obs="cd /Users/hubers001/Library/Mobile\ Documents/iCloud~md~obsidian/Documents"
+alias obs="cd /Users/hubers001/Documents/Obsidian"
 alias prog="cd ~/Documents/Programming/"
 alias c="clear"
 alias oan='obs; git add .; git commit -m "Added notes"; git push'
@@ -122,6 +122,8 @@ alias nd='cd ~/.config/nvim'
 alias nv='nvim'
 alias nn='nvim .'
 alias pc='pbcopy'
+alias bi='osascript ~/Documents/ChangeBackgroundImage.scpt'
+alias ga='/Users/hubers001/Documents/Programming/Projects/SDLGame'
 
 export MANPAGER='nvim +Man!'
 
@@ -129,11 +131,6 @@ export MANPAGER='nvim +Man!'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias runpostgresql="/Library/PostgreSQL/16/scripts/runpsql.sh"
-
-function manimrender() { 
-	manim render -q$1 scene.py BrightScene
-	manim render -q$1 scene.py DarkScene
-}
 
 function av() {
 	wd=$(pwd)
